@@ -10,7 +10,7 @@
 
 (function() {
 
-	this.smartab = function() {
+	this.smartable = function() {
 
         // Element table
 	  	this.table = null;
@@ -80,7 +80,7 @@
 	/** Public methods **/
 		
 	// Sort
-	smartab.prototype.sortTable = function(column){
+	smartable.prototype.sortTable = function(column){
 		
 		var el = document.getElementById(this.options.tabId+"sort"+column);
 
@@ -186,7 +186,7 @@
 	}
 
 	// Filter
-	smartab.prototype.filterTable = function(){
+	smartable.prototype.filterTable = function(){
 		
 		var indexRowHeader = 1;
 		if(this.table.rows[1].getElementsByTagName('th').length != 0)
@@ -219,7 +219,7 @@
 	}
 
     // Add <input> to Sort and Filter
-  	smartab.prototype.addHeader = function() {
+  	smartable.prototype.addHeader = function() {
   		var _this = this;
 
 		var columns = this.table.rows[0].cells.length;
